@@ -1,0 +1,10 @@
+<div>
+<h1>メニュー追加</h1>
+    <%= form_with model: @food do |f| %>
+        <p><%= f.text_field :name , placeholder:"品名" %></p>
+        <p><%= f.number_field :value, placeholder:"金額" %></p>
+        <p><%= f.number_field :quantitiy, placeholder:"在庫数" %></p>
+        <p><%= f.number_field :statement, placeholder:"状況" %></p>
+        <p><%= f.submit "追加" %></p>
+    <% end %>
+</div>
